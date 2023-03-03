@@ -8,10 +8,10 @@ import { ValidationErrors } from '@angular/forms';
 })
 export class InputComponent {
   input!: string
-  @Input() placeholder = 'input'
-  @Input() label = 'input'
-  @Input() type = 'text'
-  @Input() error? = ''
+  @Input() placeholder: string = 'input';
+  @Input() label: string = 'input';
+  @Input() type: string = 'text';
+  @Input() error?: string = '';
   @Input() valid: ValidationErrors | null | undefined
 
   onChange: any = () => {}

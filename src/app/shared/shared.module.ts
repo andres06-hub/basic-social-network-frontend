@@ -4,6 +4,8 @@ import { InputComponent } from './components/input/input.component';
 import { ButtonComponent } from './components/button/button.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavComponent } from './components/nav/nav.component';
+import { HeaderComponent } from './components/header/header.component';
+import { PostComponent } from './components/post/post.component';
 
 @NgModule({
   declarations: [
@@ -11,6 +13,8 @@ import { NavComponent } from './components/nav/nav.component';
     ButtonComponent,
     FooterComponent,
     NavComponent,
+    HeaderComponent,
+    PostComponent,
   ],
   imports: [
     CommonModule
@@ -19,7 +23,9 @@ import { NavComponent } from './components/nav/nav.component';
     InputComponent,
     ButtonComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    HeaderComponent,
+    PostComponent,
   ]
 })
 export class SharedModule { }
