@@ -1,0 +1,25 @@
+.sect-myMessage{
+  display: grid;
+  place-items: center;
+  .title{
+    font-size: 40px;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 6rem;
+  }
+  .cont-posts{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: auto;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 1rem;
+    // display: grid;
+    // place-items: center;
+    // border: 1px solid red;
+  }
+}

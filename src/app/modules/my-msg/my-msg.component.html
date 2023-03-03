@@ -1,0 +1,12 @@
+<app-header></app-header>
+<section class="sect-myMessage">
+  <div class="title">
+    <h1>{{ section }}</h1>
+  </div>
+  <div>
+    <app-input type="text" placeholder="dd/mm/aaaa" label="Date"></app-input>
+  </div>
+  <div class="cont-posts ">
+    <app-post [post]="post" *ngFor="let post of posts"></app-post>
+  </div>
+</section>
