@@ -23,6 +23,8 @@ export class MyMsgComponent implements OnInit {
   section: string = 'My Message';
 
   ngOnInit(): void {
-    this._postUser.getPostUser();
+    const token: string | null = localStorage.getItem('token');
+    if (!token) return;
+    this._postUser.getPostUser(token);
   }
 }
