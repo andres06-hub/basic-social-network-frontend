@@ -6,6 +6,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavComponent } from './components/nav/nav.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PostComponent } from './components/post/post.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PostComponent } from './components/post/post.component';
     PostComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
   ],
   exports: [
     InputComponent,
