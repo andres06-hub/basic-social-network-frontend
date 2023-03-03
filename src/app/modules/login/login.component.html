@@ -4,7 +4,7 @@
     <form class="form" action="">
       <app-input (data)="setEmail($event)" type="email" placeholder="example@example.com" label="Email"
         [error]="'Invalid Email'"></app-input>
-      <app-input type="password" placeholder="password" label="Password" [error]="'Incorred Password'"></app-input>
+      <app-input (data)="setPwd($event)" type="password" placeholder="password" label="Password" [error]="'Incorred Password'"></app-input>
       <button class="btn" (click)="login()">Send</button>
     </form>
   </div>

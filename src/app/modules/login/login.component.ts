@@ -15,17 +15,17 @@ export class LoginComponent {
   login() {
     let email = this.email;
     let password = this.password;
-    console.warn(email, password);
+    // console.warn(email, password);
     this._loginSvr.login({email, password});
   }
 
   setEmail(event: any) {
-    this.email = event;
-    console.warn(this.email);
+    // this.email = event;
+    // console.warn(this.email);
     console.warn(event);
   }
 
-  Password(event: any) {
-    this.password = event;
+  setPwd(event: any) {
+    this.password = event.value;
   }
 }
