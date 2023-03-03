@@ -6,9 +6,11 @@ article{
   p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
+  padding: 1rem 1rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   width: 19rem;
   background-color: rgb(209, 209, 209);
-  border: 2px solid black;
+  // border: .5px solid black;
   border-radius: 10px;
   height: 11rem;
   .footer-post{
