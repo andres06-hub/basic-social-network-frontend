@@ -1,0 +1,42 @@
+section{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+  width: 100%;
+  height: 100%;
+  .cont-img{
+    border: 1px solid yellow;
+    width: 100%;
+    height: 40%;
+    object-fit: contain;
+  }
+  .container-form{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 60%;
+    border: 1px solid red;
+    form{
+      display: grid;
+      place-items: center;
+      border: 1px solid green;
+
+      width: 80%;
+      height: 100%;
+      button{
+        width: 26rem;
+        border: 1px solid gray;
+        border-radius: 50px;
+        padding: 10px 14px;
+        outline: none;
+        transition: all ease-in-out 050ms;
+        font-size: 16.5px;
+      }
+    }
+  }
+  .footer{
+    display: grid;
+    place-items: center;
+    width: 100%;
+  }
+}
