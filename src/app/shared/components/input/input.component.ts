@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ValidationErrors } from '@angular/forms';
 
 @Component({
@@ -7,7 +7,8 @@ import { ValidationErrors } from '@angular/forms';
   styleUrls: ['./input.component.scss']
 })
 export class InputComponent {
-  input!: string
+  // input!: string
+  @Output() data: EventEmitter<string> = new EventEmitter<string>();
   @Input() placeholder: string = 'input';
   @Input() label: string = 'input';
   @Input() type: string = 'text';
@@ -17,8 +18,9 @@ export class InputComponent {
   onChange: any = () => {}
 	onTouched: any = () => {}
 
-  registerOnChange(fn: any): void {
-		this.onChange = fn
+  registerOnChange(input: any): void {
+    this.data.emit(input.value);
+		// this.onChange = fn;
   }
 
 	registerOnTouched(fn: any): void {
