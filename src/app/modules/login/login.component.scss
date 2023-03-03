@@ -1,0 +1,31 @@
+.sect-login{
+  .cont-form{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 40vh;
+    border: 1px solid red;
+    .form{
+      display: grid;
+      place-items: center;
+      border: 1px solid green;
+      width: 80%;
+      height: 100%;
+      .btn{
+        width: 26rem;
+        border: 1px solid gray;
+        border-radius: 50px;
+        padding: 10px 14px;
+        outline: none;
+        transition: all ease-in-out 050ms;
+        font-size: 16.5px;
+      }
+    }
+  }
+  .footer{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 10vh;
+  }
+}
