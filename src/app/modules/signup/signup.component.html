@@ -1,14 +1,19 @@
-<section class=" w-full h-12 bg-slate-500">
-  <div class="cont-img w-full max-h-[2rem] ">
-    <!-- <img class="object-cover" src="../../../assets/img/image 2.png" alt="logo-wires"> -->
+<section class="sec-signup">
+  <!-- <div class="cont-img">
+    <img class="object-cover" src="../../../assets/img/image 2.png" alt="logo-wires">
   </div>
+  <div class="nav">
+    <p>Wellcom to Wires</p>
+    <a class="link-login" routerLink="/login">Sign in</a>
+  </div> -->
+  <app-nav content="Sign In" link="login"></app-nav>
   <div class="container-form">
     <form action="">
       <app-input type="text" placeholder="Juan06" label="Username" [error]="'Must not be empty'"></app-input>
-      <app-input type="text" placeholder="Example@example.com" label="Email" [error]="'Invalid email'"></app-input>
-      <app-input type="text" placeholder="Password" label="Password" [error]="'incorrect password'"></app-input>
+      <app-input type="email" placeholder="Example@example.com" label="Email" [error]="'Invalid email'"></app-input>
+      <app-input type="password" placeholder="Password" label="Password" [error]="'Incorrect password'"></app-input>
       <!-- <app-input></app-input> -->
-      <button>Sing Up</button>
+      <button (click)="createUser()">Sing Up</button>
     </form>
   </div>
   <div class="footer">
