@@ -1,0 +1,6 @@
+<div class="flex flex-col-reverse relative label-input">
+  <p class="error" *ngIf="valid">{{error}}</p>
+  <input class='input' [type]="type" [placeholder]="placeholder" (ngModelChange)="onChange($event)"
+    (blur)="onTouched($event)">
+  <label class="label">{{label}}</label>
+</div>
