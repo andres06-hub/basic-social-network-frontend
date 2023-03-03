@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IPost } from 'src/app/models/IPost';
+import { MyMsgService } from './services/my-msg.service';
 
 @Component({
   selector: 'app-my-msg',
@@ -7,6 +8,7 @@ import { IPost } from 'src/app/models/IPost';
   styleUrls: ['./my-msg.component.scss']
 })
 export class MyMsgComponent implements OnInit {
+  constructor(private readonly _postUser: MyMsgService) {}
 
   posts: IPost[] = [
     {
@@ -21,6 +23,6 @@ export class MyMsgComponent implements OnInit {
   section: string = 'My Message';
 
   ngOnInit(): void {
-
+    this._postUser.getPostUser();
   }
 }
