@@ -1,5 +1,22 @@
 # BasicSocialNetworkFrontend
 
+- Installed or activated pnpm : [See more](https://pnpm.io/)
+
+```bash
+# activated
+corepack enable
+
+#Installed
+npm install -g pnpm
+```
+
+- then run: to install the dependencies
+
+```bash
+pnpm i
+```
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
 
 ## Development server
